@@ -1,0 +1,31 @@
+{
+  "name": "cf-workers-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "build:watch": "yarn build -w",
+    "preview:api": "workers-preview < dist/api.js",
+    "typecheck": "tsc --noEmit",
+    "test": "ava dist/tests.js",
+    "test:watch": "yarn test -w"
+  },
+  "author": "John Fawcett",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^1.4.1",
+    "service-worker-mock": "^2.0.3",
+    "source-map-loader": "^0.2.4",
+    "ts-loader": "^6.0.1",
+    "typescript": "^3.4.5",
+    "webpack": "^4.32.1",
+    "webpack-cli": "^3.3.2",
+    "webpack-merge": "^4.2.1",
+    "webpack-node-externals": "^1.7.2",
+    "workers-preview": "^1.0.6"
+  },
+  "dependencies": {
+    "8track": "^1.0.1"
+  }
+}
