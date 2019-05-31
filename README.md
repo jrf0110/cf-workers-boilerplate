@@ -7,7 +7,9 @@
 - Multiple worker targets
 - Workers preview
 - Testing
-- Routing example
+- Routing with async middleware example
+
+![Cloudflare workers autocompletion](./docs/screen-1.png)
 
 **Coming soon**
 
