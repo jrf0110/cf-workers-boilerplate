@@ -14,6 +14,7 @@
   "author": "John Fawcett",
   "license": "ISC",
   "devDependencies": {
+    "@cloudflare/workers-types": "^1.0.0",
     "ava": "^1.4.1",
     "service-worker-mock": "^2.0.3",
     "source-map-loader": "^0.2.4",

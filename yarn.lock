@@ -325,6 +325,11 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@cloudflare/workers-types@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@cloudflare/workers-types/-/workers-types-1.0.0.tgz#04da411c490644bb1a609d2bf49e140fbd97c2c2"
+  integrity sha512-NSfKpxqtf6eMrxAIFXCjWic/37/wtBx2JkYGUNZq3K2ZMNfomUafg3NRaGtH27laLgHJ/doThNOlGhv4bCE+EQ==
+
 "@concordance/react@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@concordance/react/-/react-2.0.0.tgz#aef913f27474c53731f4fd79cc2f54897de90fde"
