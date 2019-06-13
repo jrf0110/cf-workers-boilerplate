@@ -1,5 +1,7 @@
 # Cloudflare Workers Boilerplate
 
+![Cloudflare workers autocompletion](./docs/screen-1.png)
+
 **Features**
 
 - Strict TypeScript
@@ -8,8 +10,9 @@
 - Workers preview
 - Testing
 - Routing with async middleware example
+- Error pages
 
-![Cloudflare workers autocompletion](./docs/screen-1.png)
+![Error page](./docs/screen-2.png)
 
 **Coming soon**
 

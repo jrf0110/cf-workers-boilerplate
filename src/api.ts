@@ -1,4 +1,4 @@
-import { Router } from '8track'
+import { Router, getErrorPageHTML } from '8track'
 
 const router = new Router()
 
@@ -9,9 +9,29 @@ router.all`(.*)`.use(async (ctx, next) => {
 })
 
 router.get`/`.handle(ctx => ctx.json({ hello: 'world' }))
-router.all`(.*)`.handle(ctx => new Response('', { status: 404 }))
 
-addEventListener('fetch', (e: FetchEvent) => {
-  // If no response was resolved in the middleware chain, then passthrough
-  e.respondWith((async () => (await router.getResponseForRequest(e.request)) || fetch(e.request))())
+router.get`/cache-everything/${'path'}`.handle(async ctx => {
+  const res = await fetch(`https://my-origin.com/${ctx.params.path}`, {
+    cf: {
+      cacheEverything: true,
+    },
+  })
+
+  return ctx.end(res)
+})
+
+router.all`(.*)`.handle(ctx => ctx.end('', { status: 404 }))
+
+addEventListener('fetch', e => {
+  const res = router.getResponseForRequest(e.request).catch(
+    error =>
+      new Response(getErrorPageHTML(e.request, error), {
+        status: 500,
+        headers: {
+          'Content-Type': 'text/html',
+        },
+      }),
+  )
+
+  e.respondWith(res as any)
 })
