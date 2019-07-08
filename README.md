@@ -11,12 +11,12 @@
 - Testing
 - Routing with async middleware example
 - Error pages
+- CI with Circle
 
 ![Error page](./docs/screen-2.png)
 
 **Coming soon**
 
-- CI with Circle
 - Preact + Edge-side rendering bundle
 - Deployment
 - KV Examples

@@ -24,6 +24,11 @@ module.exports = {
 
   plugins: [new webpack.DefinePlugin(processEnv)],
 
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js'],
+    plugins: [],
+  },
+
   devtool: 'source-map',
 
   module: {

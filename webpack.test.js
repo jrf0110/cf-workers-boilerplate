@@ -2,7 +2,9 @@ const glob = require('glob')
 const nodeExternals = require('webpack-node-externals')
 
 module.exports = require('webpack-merge')(require('./webpack.base'), {
-  entry: glob.sync('./src/**/*_test.ts'),
+  entry: {
+    tests: glob.sync('./src/**/*_test.ts'),
+  },
 
   target: 'node',
 
