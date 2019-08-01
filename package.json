@@ -27,6 +27,6 @@
     "workers-preview": "^1.0.6"
   },
   "dependencies": {
-    "8track": "^1.0.1"
+    "8track": "^1.0.4"
   }
 }
