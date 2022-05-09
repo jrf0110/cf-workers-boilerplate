@@ -1,3 +1,5 @@
+> __Warning!__ This is real old
+
 # Cloudflare Workers Boilerplate
 
 ![Cloudflare workers autocompletion](./docs/screen-1.png)
