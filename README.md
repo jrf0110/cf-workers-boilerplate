@@ -1,4 +1,4 @@
-> __Warning!__ This is real old
+> __Warning!!__ This is real old
 
 # Cloudflare Workers Boilerplate
 
